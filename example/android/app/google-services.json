@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "275350181953",
+    "project_id": "native-android-cbce9",
+    "storage_bucket": "native-android-cbce9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275350181953:android:521b033d43b0c97c9d0ec0",
+        "android_client_info": {
+          "package_name": "com.example.androidinappmessagingkotlintestapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275350181953-b9bc0oju6fefst3chirretp6rvi6sunt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl4bUT1rg08bO8g3dEctRh9N5HTu0Ui6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275350181953-b9bc0oju6fefst3chirretp6rvi6sunt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275350181953:android:d0f4d42455b173109d0ec0",
+        "android_client_info": {
+          "package_name": "com.pushsdkreactnativeexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275350181953-b9bc0oju6fefst3chirretp6rvi6sunt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl4bUT1rg08bO8g3dEctRh9N5HTu0Ui6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275350181953-b9bc0oju6fefst3chirretp6rvi6sunt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

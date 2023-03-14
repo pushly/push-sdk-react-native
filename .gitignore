@@ -1,0 +1,60 @@
+# OSX
+.DS_Store
+
+.cxx/*
+
+# Xcode, Gradle
+build/
+
+# Xcode
+!**/*.xcsettings
+!**/*.xcscheme
+*.pbxuser
+!default.pbxuser
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+xcshareddata/
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Android
+.idea
+.gradle
+local.properties
+build.properties
+*.iml
+android/bin/
+.project
+.settings
+!debug.keystore
+
+# Node
+node_modules/
+npm-debug.log
+*.log
+.nvm
+.npmrc
+lib
+
+# Yarn
+yarn-error.log
+yarn.lock
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/
+
+# Typescript
+lib

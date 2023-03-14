@@ -1,0 +1,99 @@
+{
+  "name": "@pushly/push-sdk-react-native",
+  "version": "1.0.0",
+  "author": "Pushly <dev-team@pushly.com> (https://pushly.com/)",
+  "license": "MIT",
+  "description": "React Native implementation of the Pushly PushSDK",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pushly/push-sdk-react-native.git"
+  },
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "keywords": [
+    "pushly",
+    "push-notifications",
+    "push",
+    "notifications",
+    "react-native",
+    "ios",
+    "android",
+    "apns",
+    "fcm"
+  ],
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "*.podspec",
+    "!lib/typescript/example",
+    "!ios/build",
+    "!ios/Pods",
+    "!ios/PushSdkReactBridge.xcodeproj/project.xcworkspace/xcuserdata",
+    "!ios/PushSdkReactBridge.xcodeproj/xcuserdata",
+    "!android/.idea",
+    "!android/.gradle",
+    "!android/build",
+    "!android/gradle",
+    "!android/gradlew",
+    "!android/gradlew.bat",
+    "!android/local.properties",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!**/*.map",
+    "!**/.*"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "bob build",
+    "test": "jest",
+    "typescript": "tsc --noEmit",
+    "example": "yarn --cwd example",
+    "bootstrap": "yarn example && yarn install && yarn example pods",
+    "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build",
+    "docs": "typedoc --tsconfig ./tsconfig.json --out docs src/index.tsx --exclude example/**"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "resolutions": {
+    "@types/react": "17.0.21"
+  },
+  "devDependencies": {
+    "@types/react": "~17.0.21",
+    "@types/react-native": "0.70.0",
+    "del-cli": "^5.0.0",
+    "pod-install": "^0.1.38",
+    "react": "^18.2.0",
+    "react-native": "0.71.3",
+    "react-native-builder-bob": "^0.20.3",
+    "rimraf": "^4.1.2",
+    "tsc": "^2.0.4",
+    "typescript": "^4.9.5"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "packageManager": "^yarn@1.22.15"
+}
