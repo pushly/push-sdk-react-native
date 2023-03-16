@@ -40,7 +40,7 @@ class PushSdkReactNativeModule(
     companion object {
         init {
             PushSDK.setEventSourceApplication(PNEventSourceApplication(
-                name = "push-sdk-react-native",
+                name = "pushly-sdk-react-native",
                 version = BuildConfig.SDK_VERSION_CODE
             ))
         }

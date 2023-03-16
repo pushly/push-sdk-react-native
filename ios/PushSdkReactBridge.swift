@@ -12,10 +12,21 @@ internal enum SendableEvent {
     static let didReceiveNotificationDestination = "onPushSDKDidReceiveNotificationDestination"
 }
 
+internal let MODULE_VERSION = "1.0.1";
 internal let PNLogs = PNLogger(name: "PushSDK SWBridge")
 
 @objc(PushSdkReactBridge)
 class PushSdkReactBridge: RCTEventEmitter, PNPushSDKLifecycleDelegate, PNPermissionsLifecycleDelegate, PNNotificationLifecycleDelegate {
+    @objc
+    override init() {
+        super.init()
+
+        PushSDK.setEventSourceApplication(PNEventSourceApplication(
+            name: "pushly-sdk-react-native",
+            version: MODULE_VERSION
+        ))
+    }
+
     @objc
     override static func requiresMainQueueSetup() -> Bool {
         return true

@@ -1,14 +1,7 @@
 group 'com.pushly.reactnative'
 
-import groovy.json.JsonSlurper
-
-def getVersionFromPackageJson() {
-    def inputFile = new File("$projectDir/../package.json")
-    def packageJson = new JsonSlurper().parseText(inputFile.text)
-    return packageJson['version']
-}
-
-version getVersionFromPackageJson()
+def moduleVersion = '1.0.1'
+version moduleVersion
 
 buildscript {
     // Buildscript is evaluated before everything else so we can't use getExtOrDefault

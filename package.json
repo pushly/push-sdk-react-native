@@ -1,6 +1,6 @@
 {
   "name": "@pushly/push-sdk-react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Pushly <dev-team@pushly.com> (https://pushly.com/)",
   "license": "MIT",
   "description": "React Native implementation of the Pushly PushSDK",
@@ -51,6 +51,7 @@
   ],
   "scripts": {
     "typecheck": "tsc --noEmit",
+    "bump-version": "./scripts/bump-version.sh",
     "build": "bob build",
     "test": "jest",
     "typescript": "tsc --noEmit",
