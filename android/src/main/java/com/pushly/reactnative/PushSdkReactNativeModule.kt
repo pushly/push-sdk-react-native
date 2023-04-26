@@ -236,7 +236,7 @@ class PushSdkReactNativeModule(
             "anonymousId" to PushSDK.UserProfile.anonymousId,
             "externalId" to PushSDK.UserProfile.externalId,
             "isSubscribed" to PushSDK.UserProfile.isSubscribed,
-            "subscriberStatus" to PushSDK.UserProfile.subscriberStatus.name.uppercase(),
+            "subscriberStatus" to PushSDK.UserProfile.subscriberStatus?.name?.uppercase(),
             "token" to PushSDK.UserProfile.token,
             "isEligibleToPrompt" to PushSDK.UserProfile.isEligibleToPrompt,
             "isDeleted" to PushSDK.UserProfile.isDeleted,
@@ -265,7 +265,7 @@ class PushSdkReactNativeModule(
 
     @ReactMethod
     fun getSubscriberStatus(promise: Promise) = runRejectable(promise) {
-        PushSDK.UserProfile.subscriberStatus.name.uppercase()
+        PushSDK.UserProfile.subscriberStatus?.name?.uppercase()
     }
 
     @ReactMethod

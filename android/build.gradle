@@ -1,6 +1,6 @@
 group 'com.pushly.reactnative'
 
-def moduleVersion = '1.0.1'
+def moduleVersion = '1.0.2'
 version moduleVersion
 
 buildscript {
@@ -148,5 +148,5 @@ dependencies {
     api 'com.facebook.react:react-native:+'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    api 'com.pushly.android:pushsdk:[1.0,2.0['
+    api 'com.pushly.android:pushsdk:[1.1,1.2['
 }

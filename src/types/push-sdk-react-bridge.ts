@@ -3,29 +3,29 @@ import type { NativeModule } from 'react-native';
 import type { ECommItem } from './ecomm-item';
 
 export type UserProfileMap = {
-    anonymousId: string
-    externalId?: string
-    isSubscribed: boolean
-    subscriberStatus: SubscriberStatus
-    token?: string
-    isEligibleToPrompt: boolean
-    isDeleted: boolean
+    anonymousId: string | null
+    externalId: string | null
+    isSubscribed: boolean | null
+    subscriberStatus: SubscriberStatus | null
+    token: string | null
+    isEligibleToPrompt: boolean | null
+    isDeleted: boolean | null
 }
 
-type RawUserProfileMap = Omit<UserProfileMap, 'subscriberStatus'> & { subscriberStatus: string }
+type RawUserProfileMap = Omit<UserProfileMap, 'subscriberStatus'> & { subscriberStatus: string | null }
 export type UserProfileKVMapType = { [key: string]: any }
 export type UserProfileValueType = string | number | null
 
 export type UserProfileReactBridge = {
     getUserProfileMap(): Promise<RawUserProfileMap>
-    getAnonymousId(): Promise<string>
-    getExternalId(): Promise<string>
+    getAnonymousId(): Promise<string | null>
+    getExternalId(): Promise<string | null>
     setExternalId(id: string): void
-    getIsSubscribed(): Promise<boolean>
-    getSubscriberStatus(): Promise<string>
+    getIsSubscribed(): Promise<boolean | null>
+    getSubscriberStatus(): Promise<string | null>
     getToken(): Promise<string | null>
-    getIsEligibleToPrompt(): Promise<boolean>
-    getIsUserDeleted(): Promise<boolean>
+    getIsEligibleToPrompt(): Promise<boolean | null>
+    getIsUserDeleted(): Promise<boolean | null>
     requestUserDeletion(): Promise<void>
     setUserProfileKV(key: string, value: UserProfileValueType | UserProfileKVMapType): Promise<void>
     setUserProfileData(data: UserProfileKVMapType): Promise<void>

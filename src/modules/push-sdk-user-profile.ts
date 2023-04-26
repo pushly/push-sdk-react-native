@@ -23,7 +23,7 @@ export class PushSDKUserProfile {
         };
     }
 
-    static async getAnonymousId(): Promise<string> {
+    static async getAnonymousId(): Promise<string | null> {
         return ReactBridge.getAnonymousId();
     }
 
@@ -35,7 +35,7 @@ export class PushSDKUserProfile {
         return ReactBridge.setExternalId(id);
     }
 
-    static async getIsSubscribed(): Promise<boolean> {
+    static async getIsSubscribed(): Promise<boolean | null> {
         return ReactBridge.getIsSubscribed();
     }
 
@@ -47,11 +47,11 @@ export class PushSDKUserProfile {
         return ReactBridge.getToken();
     }
 
-    static async getIsEligibleToPrompt(): Promise<boolean> {
+    static async getIsEligibleToPrompt(): Promise<boolean | null> {
         return ReactBridge.getIsEligibleToPrompt();
     }
 
-    static async getIsDeleted(): Promise<boolean> {
+    static async getIsDeleted(): Promise<boolean | null> {
         return ReactBridge.getIsUserDeleted();
     }
 

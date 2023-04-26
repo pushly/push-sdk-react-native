@@ -1,7 +1,7 @@
 import { SubscriberStatus } from './enums/subscriber-status';
 import { PermissionResponse } from './enums/permission-response';
 
-export const subscriberStatusFromRaw = (raw: number | string): SubscriberStatus => {
+export const subscriberStatusFromRaw = (raw: number | string | null): SubscriberStatus => {
     const status = typeof raw === 'string' ? raw.toUpperCase() : raw;
     switch (status) {
         case SubscriberStatus.SUBSCRIBED:

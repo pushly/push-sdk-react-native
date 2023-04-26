@@ -1,6 +1,6 @@
 {
   "name": "@pushly/push-sdk-react-native",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Pushly <dev-team@pushly.com> (https://pushly.com/)",
   "license": "MIT",
   "description": "React Native implementation of the Pushly PushSDK",
@@ -96,5 +96,6 @@
   "engines": {
     "node": ">= 14"
   },
-  "packageManager": "^yarn@1.22.15"
+  "packageManager": "^yarn@1.22.15",
+  "dependencies": {}
 }
