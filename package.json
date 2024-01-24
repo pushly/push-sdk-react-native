@@ -1,6 +1,6 @@
 {
   "name": "@pushly/push-sdk-react-native",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "author": "Pushly <dev-team@pushly.com> (https://pushly.com/)",
   "license": "MIT",
   "description": "React Native implementation of the Pushly PushSDK",

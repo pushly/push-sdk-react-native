@@ -12,7 +12,7 @@ internal enum SendableEvent {
     static let didReceiveNotificationDestination = "onPushSDKDidReceiveNotificationDestination"
 }
 
-internal let MODULE_VERSION = "1.0.2";
+internal let MODULE_VERSION = "1.1.0";
 internal let PNLogs = PNLogger(name: "PushSDK SWBridge")
 
 @objc(PushSdkReactBridge)

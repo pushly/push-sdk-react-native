@@ -58,3 +58,5 @@ Carthage/
 
 # Typescript
 lib
+
+*.lock

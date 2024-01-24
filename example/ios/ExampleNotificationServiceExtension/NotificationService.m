@@ -2,7 +2,7 @@
 //  NotificationService.m
 //  ExampleNotificationServiceExtension
 //
-//  Created by Adam Hay on 3/2/23.
+//  Created by Pushly on 3/2/23.
 //
 
 #import "NotificationService.h"
@@ -20,7 +20,7 @@
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
-    
+
     [PNNotificationServiceExtensionHandler didReceiveExtensionRequest:request content:self.bestAttemptContent withContentHandler:contentHandler];
 }
 
